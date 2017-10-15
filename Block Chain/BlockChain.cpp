@@ -47,7 +47,7 @@ void BlockChain::mine()
 
 BlockChain::~BlockChain()
 {
-	//make sure to delete memory allocated on the stack!
+	//make sure to delete memory allocated on the heap!
 	for (int i = 0; i != _blockList.size(); i++)
 	{
 		delete _blockList[i];
